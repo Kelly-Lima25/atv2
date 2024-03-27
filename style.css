@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Revalia&display=swap');
+
+
+body,h1, .header-bg, li, ul, h2, h3, a, main, footer, img{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-bg{
+    background-color: #0C1821;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 10px;
+    list-style: none;
+}
+
+.header-menu li a{
+    text-decoration: none;
+    display: block;
+    font-family: 'Mukta Vaani';
+    color: #C08552;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+h1{
+    color: #C08552;
+    font-family: 'Revalia', sans-serif;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 80px;
+    height: 750px;
+    margin-top: 100px;
+}
+
+.grid-produto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.grid-conteudo{
+    height: 330px;
+    width: 320px;
+    border-radius: 20px;
+    background-color: #f1c1963f;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.grid-conteudo p{
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: 0.875rem;
+    color: #0C1821;
+    padding: 10px 0px 0px 10px;
+}
+
+.subTitulo{
+    margin-left: 50px;
+    font-family: "Revalia";
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #152635;
+}
+
+.container{
+    height: 200px;
+    position: relative;
+}
+
+.container img{
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    border-radius: 20px 20px 0px 0px;
+    opacity: 80%;
+}
+
+.container h3{
+    font-family: "Revalia", sans-serif;
+    color: #0C1821;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 10px 0px 5px 10px;
+    position: absolute;
+    z-index: 1;
+    word-break: break-all;
+    max-width: 5ch;
+}
+
+.botao{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0C1821;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    color: #62839c;
+    font-weight: 600;
+    margin: 0px 20px 0px 80.65px;
+    border-radius: 4px;
+    max-width: max-content;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+    letter-spacing: 0.1rem;
+}
+
+.botao:hover{
+    background-color:  #152635;
+}
+
+.promo-bg{
+    background-color: #0c1821e5;
+    height: 400px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.desc{
+    margin-left: 50px;
+}
+
+.desc h2{
+    font-family: "Revalia";
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #C08552;
+    margin-top: 50px;
+}
+
+.desc p{
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: 1.5rem;
+    color: #ffffffaf;
+    
+}
+
+.desc-detalhe{
+    text-transform: uppercase;
+    color: #C08552;
+}
+
+.desc .botao{
+    margin-top: 80px;
+    margin-left: 0px;
+   
+}
+
+.produtos-promo{
+    display: grid;
+    grid-template-columns: 220px 220px;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 50px;
+}
+
+.produto-promo img{
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.produto-promo img:hover{
+    transform:translateY(-10px) ;
+    cursor: pointer;
+}
+
+.depoimentos{
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.depoimentos h2{
+    font-family: "Revalia";
+    font-size: 3rem;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    max-width: 25ch;
+    margin-left: 50px;
+    color: #152635;
+    margin-bottom: 80px;
+}
+
+.grid-depoimentos{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    gap: 40px;
+    justify-content: center;
+}
+
+.grid-depoimento{
+    width: 300px;
+    height: 180px;
+    border: 4px solid #C08552;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.grid-depoimento span{
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: 1.5rem;
+    align-self: end;
+    margin-top: 0px;
+}
+
+.grid-depoimento span::before{
+    content: "";
+    background: url("fotos/user\ \(2\).png");
+        
+    display: inline-block;
+    margin: 10px 10px 0px 10px;
+    width: 32px;
+    height: 32px;
+    
+}
+
+.grid-depoimento p{
+    margin-left: 10px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: 1rem;
+}
+
+
+footer{
+    height: 100px;
+    background-color: #0C1821;
+    display: flex;
+}
+
+footer span{
+    color: #C08552;
+    align-self: end;
+    padding-left: 50px;
+}
+
+@media (max-width:1300px){
+    .grid-produto{
+        display: grid;
+        grid-template-columns: 250px 250px; 
+        grid-template-rows: 250px;   
+        gap: 50px;
+    }
+
+    .grid-conteudo{
+        height: 250px;
+        width: 250px;
+    }
+
+    .grid-conteudo p{
+        display: none;
+    }
+    .grid-conteudo .botao{
+        padding: 8px 16px;
+        margin: 0px auto;
+        display: grid;
+    }
+
+    .container h3{
+        font-size: 1rem;
+    }
+
+    main{
+        height: 550px;
+    }
+}
+
+@media(max-width:1018px){
+    .depoimentos h2{
+        font-size: 1.5rem;
+        word-wrap: break-word;
+        max-width: 100%;
+        margin-bottom:40px;
+    }
+
+    .depoimentos{
+       margin-top:55px;
+       margin-bottom: 150px;
+    }
+
+    .grid-depoimentos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:673px){
+    .depoimentos{
+        margin-bottom: 420px;
+    }
+}
+
+@media (max-width:1180px){
+    main{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        gap: 50px;
+    }
+    .subTitulo{
+        font-size: 1.5rem;
+        margin: 0 auto;
+        word-break: break-all;
+    }
+    .grid-produto{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .desc h2{
+        font-size: 2rem;
+    }
+
+    .desc p{
+        font-size: 1rem;
+    }
+
+    .desc .botao{
+        padding: 8px 16px;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .promo-bg{
+        height: 350px;
+    }
+
+    .produtos-promo{
+        grid-template-columns: 150px 150px;
+        gap: 0px 50px;
+    }
+
+    .header-bg{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:670px){
+    .grid-produto{
+        display: grid;
+        grid-template-columns: 200px 200px; 
+        gap: 20px;
+    }
+    .grid-conteudo{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .grid-conteudo .botao{
+        margin: -50px auto;
+        font-size: 0.8rem;
+    }
+    .promo-bg{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 380px;
+        margin-top: 40px;
+    }
+    .produtos-promo{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .produto-promo{
+        width: 120px;
+    }
+    .desc .botao{
+        display: none;
+    }
+    .desc h2{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .subTitulo{
+        font-size: 1rem;
+    }
+}
