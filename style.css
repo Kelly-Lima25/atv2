@@ -358,18 +358,23 @@ footer span{
 }
 
 @media (max-width:670px){
+   main{
+    height: 540px;
+   }
     .grid-produto{
         display: grid;
-        grid-template-columns: 200px 200px; 
-        gap: 20px;
+        grid-template-columns: 180px 180px; 
+        gap: 0px 20px;
+    
     }
     .grid-conteudo{
-        height: 200px;
-        width: 200px;
+        margin: 0 auto;
+        height: 180px;
+        width: 180px;
     }
     
     .grid-conteudo .botao{
-        margin: -50px auto;
+        margin: -70px  auto auto;
         font-size: 0.8rem;
     }
     .promo-bg{
