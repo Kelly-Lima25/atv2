@@ -59,10 +59,11 @@ const server = http.createServer((req,resposta)=>{
             resposta.end(imageData);
         })
     }
+   
     else{
         resposta.end("Site não encontrado");
     }
-}).listen(8181);
+}).listen(8188);
 
 console.log("Meu servidor!");
 
