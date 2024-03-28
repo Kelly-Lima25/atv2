@@ -1,3 +1,5 @@
+
+
 var http = require("http");
 const fs = require("fs");
 const path = require("path");
@@ -59,11 +61,20 @@ const server = http.createServer((req,resposta)=>{
             resposta.end(imageData);
         })
     }
+    else if(req.url === "fotos/user.png"){
+        fs.readFile(path.join(__dirname, "fotos/user.png"), (err, imageData) =>{
+            if (err) {
+                console.error('Erro ao ler o arquivo:', err);
+                return;
+            }
+            resposta.end(imageData);
+        })
+    }
    
     else{
         resposta.end("Site não encontrado");
     }
-}).listen(8188);
+}).listen(8186);
 
 console.log("Meu servidor!");
 

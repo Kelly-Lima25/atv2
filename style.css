@@ -225,7 +225,7 @@ main{
 
 .grid-depoimento span::before{
     content: "";
-    background: url("fotos/user\ \(2\).png");
+    background: url("fotos/user.png");
         
     display: inline-block;
     margin: 10px 10px 0px 10px;
@@ -363,14 +363,14 @@ footer span{
    }
     .grid-produto{
         display: grid;
-        grid-template-columns: 180px 180px; 
+        grid-template-columns: 170px 170px; 
         gap: 0px 20px;
     
     }
     .grid-conteudo{
         margin: 0 auto;
-        height: 180px;
-        width: 180px;
+        height: 170px;
+        width: 170px;
     }
     
     .grid-conteudo .botao{
@@ -388,6 +388,7 @@ footer span{
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
+
     }
     .produto-promo{
         width: 120px;
@@ -401,5 +402,13 @@ footer span{
     }
     .subTitulo{
         font-size: 1rem;
+        word-wrap: break-word;
+        max-width: 16ch;
+        /* margin-left: 0; */
+        text-align: center;
+        
+    }
+    .grid-depoimento{
+        width: 270px;
     }
 }
